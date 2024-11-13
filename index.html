@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Orderly Quest: Unifying the Chains</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Orderly Quest: Unifying the Chains</h1>
+      <p id="tagline">
+        Help unify liquidity across blockchains and learn about Orderly Network!
+      </p>
+    </header>
+
+    <div id="game-container">
+      <!-- Game Sections -->
+      <div id="ethereum-game" class="game-section hidden">
+        <!-- Ethereum Maze Game -->
+        <canvas id="ethereumCanvas" width="800" height="500"></canvas>
+      </div>
+
+      <div id="bsc-game" class="game-section hidden">
+        <!-- BSC Block Builder Game -->
+        <canvas id="bscCanvas" width="800" height="500"></canvas>
+      </div>
+
+      <div id="solana-game" class="game-section hidden">
+        <!-- Solana Obstacle Game -->
+        <canvas id="solanaCanvas" width="800" height="500"></canvas>
+      </div>
+
+      <div id="avalanche-game" class="game-section hidden">
+        <!-- Avalanche Memory Game -->
+        <div id="memory-game"></div>
+      </div>
+
+      <div id="polygon-game" class="game-section hidden">
+        <!-- Polygon Quiz Game -->
+        <div id="quiz-container">
+          <h2 id="quiz-question"></h2>
+          <div id="quiz-options"></div>
+        </div>
+      </div>
+
+      <!-- Pop-up for detailed explanations and instructions -->
+      <div id="popup" class="hidden">
+        <div id="popup-content">
+          <h2 id="card-title"></h2>
+          <p id="card-description"></p>
+          <button id="popup-button">Continue</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <div id="instructions">
+      <p>
+        <strong>Instructions:</strong> Complete each mini-game to collect
+        liquidity tokens and learn about Orderly Network!
+      </p>
+      <p>Liquidity Tokens Collected: <span id="score">0</span>/5</p>
+    </div>
+
+    <!-- Feature Cards -->
+    <div id="feature-cards">
+      <h2>Orderly Network Features</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>About Orderly Network</h3>
+          <p>
+            Orderly Network is a Layer 2 solution built on the OP stack,
+            delivering a permissionless liquidity layer for Web3 trading with a
+            shared order book across multiple blockchains.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Advanced Technology</h3>
+          <p>
+            Utilizes a low-latency, shared liquidity central limit order book
+            accessible from major EVM chains, powered by Orderly Chain and
+            LayerZero.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Real-World Applications</h3>
+          <p>
+            Enables the creation of decentralized exchanges, supports spot and
+            perpetual futures trading, and offers tools for developers.
+          </p>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h3>Key Events</h3>
+          <p>
+            Launched its platform, introduced the ORDER token, and formed
+            strategic partnerships, expanding its ecosystem and influence in the
+            DeFi space.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Security and Decentralization</h3>
+          <p>
+            Implements a decentralized architecture with advanced cryptographic
+            techniques, ensuring a secure and resilient network.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Mission and Vision</h3>
+          <p>
+            Aims to empower trading on any chain, any asset, and any interface,
+            revolutionizing DeFi by providing seamless cross-chain trading
+            experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
